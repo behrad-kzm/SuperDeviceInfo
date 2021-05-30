@@ -1,0 +1,16 @@
+PODS:
+  - SuperDeviceInfo (0.1.0)
+
+DEPENDENCIES:
+  - SuperDeviceInfo (from `../`)
+
+EXTERNAL SOURCES:
+  SuperDeviceInfo:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SuperDeviceInfo: c18a1984dfbaa8aa060cd4f3cea59734f3c00727
+
+PODFILE CHECKSUM: 79f5984cc98d1dba3fd4d1d7ba3979b723bae4de
+
+COCOAPODS: 1.10.1

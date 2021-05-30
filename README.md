@@ -1,4 +1,5 @@
 # SuperDeviceInfo
+<<<<<<< HEAD
 
 [![CI Status](https://img.shields.io/travis/behrad-kzm/SuperDeviceInfo.svg?style=flat)](https://travis-ci.org/behrad-kzm/SuperDeviceInfo)
 [![Version](https://img.shields.io/cocoapods/v/SuperDeviceInfo.svg?style=flat)](https://cocoapods.org/pods/SuperDeviceInfo)
@@ -27,3 +28,6 @@ behrad-kzm, behrad.kzm@gmail.com
 ## License
 
 SuperDeviceInfo is available under the MIT license. See the LICENSE file for more info.
+=======
+A complete library to collect device hardware informations. 
+>>>>>>> 293ac4bd444d10da98a14c61bdeb5001550da9a8
