@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'SuperDeviceInfo_Example' do
+  pod 'SuperDeviceInfo', :path => '../'
+
+  target 'SuperDeviceInfo_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
