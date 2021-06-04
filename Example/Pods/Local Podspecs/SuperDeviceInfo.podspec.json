@@ -18,5 +18,9 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "SuperDeviceInfo/Classes/**/*"
+  "source_files": "SuperDeviceInfo/Classes/**/*",
+  "swift_versions": "5",
+  "static_framework": true,
+  "public_header_files": "Pod/Classes/**/*.h",
+  "swift_version": "5"
 }
