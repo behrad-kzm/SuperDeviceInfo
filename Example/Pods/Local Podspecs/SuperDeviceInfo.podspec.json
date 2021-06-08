@@ -21,6 +21,11 @@
   "source_files": "SuperDeviceInfo/Classes/**/*",
   "swift_versions": "5",
   "static_framework": true,
+  "dependencies": {
+    "SystemServices": [
+      "~> 2.0.1"
+    ]
+  },
   "public_header_files": "Pod/Classes/**/*.h",
   "swift_version": "5"
 }

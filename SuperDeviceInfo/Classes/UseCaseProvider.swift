@@ -8,5 +8,7 @@
 import Foundation
 
 public struct UseCaseProvider {
-//  public let hardware: Hard
+  public func makeInfo(fromDictionary dict: [String: SuperDeviceInfoEnumsProtocol]) -> [String: Any] {
+    return Dictionary(uniqueKeysWithValues: dict.map { key, value in (key, value.extractDataFromDevice()) })
+  }
 }

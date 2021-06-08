@@ -6,82 +6,79 @@
 //
 
 import Foundation
+import SystemServices
 
-public extension HardwareInfoType {
-  func getInfo() -> Any {
-    return ""
-//    switch self {
-//
-//    case .systemUptime:
-//
-//    case .deviceModel:
-//
-//    case .deviceName:
-//
-//    case .systemName:
-//
-//    case .systemVersion:
-//
-//    case .systemDeviceTypeFormattedNO:
-//
-//    case .systemDeviceTypeFormattedYES:
-//
-//    case .screenWidth:
-//
-//    case .screenHeight:
-//
-//    case .screenBrightness:
-//
-//    case .multitaskingEnabled:
-//
-//    case .proximitySensorEnabled:
-//
-//    case .debuggerAttached:
-//
-//    case .pluggedIn:
-//
-//    case .stepCountingAvailable:
-//
-//    case .distanceAvailable:
-//
-//    case .floorCountingAvailable:
-//
-//    case .jailbroken:
-//
-//    case .numberProcessors:
-//
-//    case .numberActiveProcessors:
-//
-//    case .processorsUsage:
-//
-//    case .accessoriesAttached:
-//
-//    case .headphonesAttached:
-//
-//    case .numberAttachedAccessories:
-//
-//    case .nameAttachedAccessories:
-//
-//    case .batteryLevel:
-//
-//    case .charging:
-//
-//    case .fullyCharged:
-//
-//    case .deviceOrientation:
-//
-//    case .country:
-//
-//    case .language:
-//
-//    case .timeZone:
-//
-//    case .currency:
-//
-//    case .applicationVersion:
-//
-//    case .clipboardContent:
-//
-//    }
+extension HardwareInfoType: SuperDeviceInfoEnumsProtocol {
+  public func extractDataFromDevice() -> Any {
+    switch self {
+    case .systemUptime:
+      return SystemServices.shared().systemsUptime ?? ""
+      
+    case .deviceModel:
+      return SystemServices.shared().deviceModel ?? ""
+      
+    case .deviceName:
+      return SystemServices.shared().deviceName ?? ""
+      
+    case .systemName:
+      return SystemServices.shared().systemName ?? ""
+      
+    case .systemVersion:
+      return SystemServices.shared().systemsVersion ?? ""
+      
+    case .systemDeviceTypeFormattedNO:
+      return SystemServices.shared().systemDeviceTypeNotFormatted ?? ""
+      
+    case .systemDeviceTypeFormattedYES:
+      return SystemServices.shared().systemDeviceTypeFormatted ?? ""
+      
+    case .multitaskingEnabled:
+      return SystemServices.shared().multitaskingEnabled
+      
+    case .proximitySensorEnabled:
+      return SystemServices.shared().proximitySensorEnabled
+      
+    case .debuggerAttached:
+      return SystemServices.shared().debuggerAttached
+      
+    case .stepCountingAvailable:
+      return SystemServices.shared().stepCountingAvailable
+      
+    case .distanceAvailable:
+      return SystemServices.shared().distanceAvailable
+      
+    case .floorCountingAvailable:
+      return SystemServices.shared().floorCountingAvailable
+      
+    case .jailbroken:
+      return SystemServices.shared().jailbroken
+      
+    case .numberProcessors:
+      return SystemServices.shared().numberProcessors
+      
+    case .numberActiveProcessors:
+      return SystemServices.shared().numberActiveProcessors
+      
+    case .processorsUsage:
+      return SystemServices.shared().processorsUsage ?? ""
+      
+    case .accessoriesAttached:
+      return SystemServices.shared().accessoriesAttached
+      
+    case .headphonesAttached:
+      return SystemServices.shared().headphonesAttached
+      
+    case .numberAttachedAccessories:
+      return SystemServices.shared().numberAttachedAccessories
+      
+    case .nameAttachedAccessories:
+      return SystemServices.shared().nameAttachedAccessories ?? ""
+      
+    case .applicationVersion:
+      return SystemServices.shared().applicationVersion ?? ""
+      
+    case .applicationCPUUsage:
+      return SystemServices.shared().applicationCPUUsage
+    }
   }
 }

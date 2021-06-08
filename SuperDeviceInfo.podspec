@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   # }
   s.swift_version = '5'
   s.static_framework = true
-#  s.dependency 'SystemServices', '~> 2.0.1'
+  s.dependency 'SystemServices', '~> 2.0.1'
    s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

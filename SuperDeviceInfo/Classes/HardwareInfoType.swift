@@ -7,6 +7,7 @@
 
 import Foundation
 public enum HardwareInfoType {
+  
   case systemUptime
   case deviceModel
   case deviceName
@@ -14,13 +15,9 @@ public enum HardwareInfoType {
   case systemVersion
   case systemDeviceTypeFormattedNO
   case systemDeviceTypeFormattedYES
-  case screenWidth
-  case screenHeight
-  case screenBrightness
   case multitaskingEnabled
   case proximitySensorEnabled
   case debuggerAttached
-  case pluggedIn
   case stepCountingAvailable
   case distanceAvailable
   case floorCountingAvailable
@@ -32,14 +29,7 @@ public enum HardwareInfoType {
   case headphonesAttached
   case numberAttachedAccessories
   case nameAttachedAccessories
-  case batteryLevel
-  case charging
-  case fullyCharged
-  case deviceOrientation
-  case country
-  case language
-  case timeZone
-  case currency
   case applicationVersion
-  case clipboardContent
+  case applicationCPUUsage
+
 }
