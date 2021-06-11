@@ -7,12 +7,13 @@
 //
 
 import UIKit
-
+import SuperDeviceInfo
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      UIDevice.current.name
+      let allInfo = UseCaseProvider.getAllInfo()
+      print(allInfo)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

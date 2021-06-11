@@ -26,6 +26,8 @@
 		045A5E2D266F9ACE009D1B3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045A5E2C266F9ACE009D1B3B /* UIKit.framework */; };
 		045A5E33266F9C49009D1B3B /* UIDevice+ModelName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A5E32266F9C49009D1B3B /* UIDevice+ModelName.swift */; };
 		045A5E39266FD2BE009D1B3B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045A5E38266FD2BD009D1B3B /* AdSupport.framework */; };
+		04EDDD002673911700398723 /* UseCaseProvider+AllInfoDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDDCFF2673911700398723 /* UseCaseProvider+AllInfoDictionary.swift */; };
+		04EDDD062673929400398723 /* NetworkInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EDDD052673929400398723 /* NetworkInfoProvider.swift */; };
 		0822BEDE584F8871FFC59DD647709331 /* Pods-SuperDeviceInfo_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9AA22451A3B500A2DB93DFED3398B /* Pods-SuperDeviceInfo_Example-dummy.m */; };
 		0BD1B2895F9BFB3AF47241B7C03575BD /* SSApplicationInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 62B98A0B7AD8BEB115742237B726B14E /* SSApplicationInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0EB348CCFB9FAD739E9EDEE9026BF56D /* SSAccelerometerInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D3990AEA5DCEA594CBC2A88923828538 /* SSAccelerometerInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -130,6 +132,8 @@
 		045A5E2C266F9ACE009D1B3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		045A5E32266F9C49009D1B3B /* UIDevice+ModelName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+ModelName.swift"; sourceTree = "<group>"; };
 		045A5E38266FD2BD009D1B3B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		04EDDCFF2673911700398723 /* UseCaseProvider+AllInfoDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UseCaseProvider+AllInfoDictionary.swift"; sourceTree = "<group>"; };
+		04EDDD052673929400398723 /* NetworkInfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInfoProvider.swift; sourceTree = "<group>"; };
 		09A37769E205203F5419C9D93D87A4B2 /* SystemServices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SystemServices.h; path = "System Services/SystemServices.h"; sourceTree = "<group>"; };
 		0CAFF8713D1D1660FFF4FE7DE72140F1 /* SystemServices-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SystemServices-prefix.pch"; sourceTree = "<group>"; };
 		0EC609898DA0DF76A28F55627019F7DB /* Pods-SuperDeviceInfo_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SuperDeviceInfo_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -314,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				045A5DF1266F9728009D1B3B /* NetworkInfoType.swift */,
+				04EDDD052673929400398723 /* NetworkInfoProvider.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -323,6 +328,7 @@
 			children = (
 				045A5DEF266F9728009D1B3B /* SuperDeviceInfoEnumsProtocol.swift */,
 				045A5DE9266F9728009D1B3B /* UseCaseProvider.swift */,
+				04EDDCFF2673911700398723 /* UseCaseProvider+AllInfoDictionary.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -744,6 +750,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				045A5DF8266F9729009D1B3B /* LocaleInfoProvider.swift in Sources */,
+				04EDDD062673929400398723 /* NetworkInfoProvider.swift in Sources */,
 				045A5DF6266F9729009D1B3B /* UseCaseProvider.swift in Sources */,
 				045A5DFB266F9729009D1B3B /* MemoryInfoProvider.swift in Sources */,
 				045A5DF9266F9729009D1B3B /* DisplayInfoType.swift in Sources */,
@@ -754,6 +761,7 @@
 				045A5E00266F9729009D1B3B /* HardwareInfoType.swift in Sources */,
 				04270C9C267381FF00140A84 /* Keystore.swift in Sources */,
 				045A5DFA266F9729009D1B3B /* LocaleInfoType.swift in Sources */,
+				04EDDD002673911700398723 /* UseCaseProvider+AllInfoDictionary.swift in Sources */,
 				045A5DF4266F9729009D1B3B /* DisplayInfoProvider.swift in Sources */,
 				04270C8D26737F6500140A84 /* KeychainHandler.swift in Sources */,
 				045A5DFC266F9729009D1B3B /* SuperDeviceInfoEnumsProtocol.swift in Sources */,

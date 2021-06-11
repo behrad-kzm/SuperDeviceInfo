@@ -21,9 +21,12 @@ struct Keystore {
        let uid = UserDefaults.standard.string(forKey: versionUIDKey) {
       return uid
     }
+    
+    //Reset UID
     let uid = UUID().uuidString
     UserDefaults.standard.setValue(uid, forKey: versionUIDKey)
     UserDefaults.standard.setValue(appVersion, forKey: appVersionKey)
+    //
     return uid
     
   }
