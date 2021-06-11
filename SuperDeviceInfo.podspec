@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SuperDeviceInfo'
-  s.version          = '1.0.5'
-  s.summary          = 'extract many useful device information with a sort of enums'
+  s.version          = '1.0.6'
+  s.summary          = 'extract many useful device information with a sort of enums.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+"extract many useful device information with a sort of enums."
                        DESC
 
   s.homepage         = 'https://github.com/behrad-kzm/SuperDeviceInfo'
