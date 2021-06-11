@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SuperDeviceInfo'
-  s.version          = '1.0.4'
-  s.summary          = 'A short description of SuperDeviceInfo.'
+  s.version          = '1.0.5'
+  s.summary          = 'extract many useful device information with a sort of enums'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -38,7 +38,7 @@ TODO: Add long description of the pod here.
   s.swift_version = '5'
   s.static_framework = true
   s.dependency 'SystemServices', '~> 2.0.1'
-   s.public_header_files = 'Pod/Classes/**/*.h'
+#   s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
