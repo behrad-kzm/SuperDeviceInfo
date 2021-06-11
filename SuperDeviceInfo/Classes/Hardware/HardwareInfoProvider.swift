@@ -7,13 +7,14 @@
 
 import Foundation
 import UIKit
+import System
 import SystemServices
 
 extension HardwareInfoType: SuperDeviceInfoEnumsProtocol {
   public func extractDataFromDevice() -> Any {
     switch self {
     case .systemUptime:
-      return SystemServices.shared().systemsUptime ?? ""
+      return ProcessInfo.processInfo.systemUptime
       
     case .deviceModel:
       return SystemServices.shared().deviceModel ?? ""
