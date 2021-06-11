@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 import SystemServices
 
 extension HardwareInfoType: SuperDeviceInfoEnumsProtocol {
@@ -26,11 +27,8 @@ extension HardwareInfoType: SuperDeviceInfoEnumsProtocol {
     case .systemVersion:
       return SystemServices.shared().systemsVersion ?? ""
       
-    case .systemDeviceTypeFormattedNO:
-      return SystemServices.shared().systemDeviceTypeNotFormatted ?? ""
-      
-    case .systemDeviceTypeFormattedYES:
-      return SystemServices.shared().systemDeviceTypeFormatted ?? ""
+    case .systemDeviceTypeFormatted:
+      return UIDevice.modelName
       
     case .multitaskingEnabled:
       return SystemServices.shared().multitaskingEnabled

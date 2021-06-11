@@ -12,4 +12,8 @@ public enum LocaleInfoType {
   case language
   case timeZone
   case currency
+  case advertisementId
+  case keychainPersistUID
+  case installDeviceUID
+  case launchDeviceUID
 }

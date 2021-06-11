@@ -13,8 +13,7 @@ public enum HardwareInfoType {
   case deviceName
   case systemName
   case systemVersion
-  case systemDeviceTypeFormattedNO
-  case systemDeviceTypeFormattedYES
+  case systemDeviceTypeFormatted
   case multitaskingEnabled
   case proximitySensorEnabled
   case debuggerAttached
